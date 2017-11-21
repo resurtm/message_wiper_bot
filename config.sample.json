@@ -1,0 +1,17 @@
+{
+  "webhook": {
+    "token": "XXX",
+    "generateToken": true,
+    "generatedTokenLength": 32,
+    "serverHostname": "localhost",
+    "serverPort": 8950
+  },
+  "telegram": {
+    "apiUrl": "https://api.telegram.org/bot{{ACCESS_TOKEN}}/",
+    "botToken": "XXX",
+    "botUsername": "conf_stat_bot"
+  },
+  "ngrok": {
+    "apiUrl": "http://127.0.0.1:4040/api/"
+  }
+}
