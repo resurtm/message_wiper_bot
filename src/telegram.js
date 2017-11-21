@@ -54,4 +54,11 @@ function sendMessage({chatId, messageText, replyToMessageId, parseMode}) {
   return dataRequest('sendMessage', params);
 }
 
-module.exports = {getMe, setWebhook, deleteWebhook, getWebhookInfo, sendMessage};
+function deleteMessage(chatId, messageId) {
+  return dataRequest('deleteMessage', {
+    chat_id: chatId,
+    message_id: messageId,
+  })
+}
+
+module.exports = {getMe, setWebhook, deleteWebhook, getWebhookInfo, sendMessage, deleteMessage};

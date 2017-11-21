@@ -23,6 +23,6 @@ process.on('unhandledRejection', errorHandler('unhandledRejection'));
   app.use(bodyParser.json());
   app.use('/', routes);
   app.listen(config.webhook.serverPort, config.webhook.serverHostname, () => {
-    console.log(`bot app listening on ${config.webhook.serverHostname}:${config.webhook.serverPort}`);
+    console.log(`app listening on ${config.webhook.serverHostname}:${config.webhook.serverPort}`);
   });
 })();
